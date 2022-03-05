@@ -1,0 +1,109 @@
+
+.root {
+    font-family: "Inter", Arial, sans-serif;
+    width: 100%;
+    max-width: 1280px;
+    min-width: 160px;
+    margin: 0 auto;
+    background-color: #ffffff;
+}
+.header {
+    max-width: 1184px;
+    margin: 0 auto;
+    padding: 28px 48px 56px 48px;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header__logo {
+    margin-bottom: 50px;
+    width: 176px;
+    height: 52px;
+}
+
+@media screen and (max-width: 767px) {
+ .header__logo {
+        width: 142px;
+        height: 42px;
+    }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1279px) {
+    .header {
+        padding-bottom: 48px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .header {
+        padding: 28px 24px 28px 24px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .header {
+        padding: 16px 16px 48px 16px;
+    }
+}
+
+.place {
+    padding: 40px 0;
+    display: grid;
+    grid-template-columns: 460px 1fr;
+    grid-template-rows: 1fr;
+    grid-gap: 48px 40px;
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1279px) {
+    .place {
+        grid-template-columns: 440px 1fr;
+        grid-gap: 48px 32px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .place {
+        padding: 36px 0;
+        grid-template-columns: 340px 1fr;
+        grid-gap: 48px 28px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .place {
+        padding: 24px 0;
+        grid-template-columns: minmax(288px, 1fr);
+        grid-gap: 32px;
+    }
+}
+
+.place__image {
+    width: 100%;
+  }
+ 
+  .place__paragraph {
+    margin: 0;
+    margin-bottom: 24px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 1.67;
+    color: #000000;
+  }
+  
+  .place__paragraph:last-of-type {
+    margin-bottom: 0;
+  }
+  
+  @media screen and (max-width: 1023px) {
+   .place__paragraph {
+        font-size: 16px;
+    }
+  }
+
+  @media screen and (max-width: 767px) {
+    .place__paragraphs {
+        padding: 0 16px;
+    }
+  }

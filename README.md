@@ -1,1 +1,1 @@
-# Nic_tech.ru
+# Nic-tech
